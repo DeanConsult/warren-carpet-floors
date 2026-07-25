@@ -243,7 +243,7 @@
     .footer-bottom a { color: rgba(255,255,255,0.6); margin-left: 16px; transition: color .2s; }
     .footer-bottom a:hover { color: var(--amber); }
 
-    .mobile-call-btn { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; opacity: 0; pointer-events: none; transition: opacity .3s ease; background: var(--amber); color: var(--white); text-align: center; padding: 16px; font-weight: 800; font-size: 1.1rem; box-shadow: 0 -4px 16px rgba(0,0,0,0.2); }
+    .mobile-call-btn { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: var(--amber); color: var(--white); text-align: center; padding: 16px; font-weight: 800; font-size: 1.1rem; box-shadow: 0 -4px 16px rgba(0,0,0,0.2); }
     @media (max-width: 768px) { .mobile-call-btn { display: block; } body { padding-bottom: 58px; } }
   </style>
 </head>
@@ -549,7 +549,6 @@
       this.setAttribute("aria-expanded", open);
     });
   });
-  setTimeout(function(){var b=document.querySelector('.mobile-call-btn');if(b){b.style.opacity='1';b.style.pointerEvents='auto';}},800);
 </script>
 </body>
 </html>

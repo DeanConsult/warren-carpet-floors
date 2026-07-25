@@ -71,7 +71,7 @@
     footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 32px 24px; text-align: center; font-size: 0.85rem; }
     footer a { color: rgba(255,255,255,0.8); margin: 0 8px; }
     footer a:hover { color: var(--amber); }
-    .mobile-call-btn { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; opacity: 0; pointer-events: none; transition: opacity .3s ease; background: var(--amber); color: var(--white); text-align: center; padding: 16px; font-weight: 800; font-size: 1.1rem; }
+    .mobile-call-btn { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: var(--amber); color: var(--white); text-align: center; padding: 16px; font-weight: 800; font-size: 1.1rem; }
     @media (max-width: 768px) { .mobile-call-btn { display: block; } body { padding-bottom: 58px; } }
   </style>
 </head>
@@ -230,7 +230,6 @@
     hb.addEventListener("click", function () { var open = nv.classList.toggle("open"); hb.setAttribute("aria-expanded", open); });
     nv.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { nv.classList.remove("open"); hb.setAttribute("aria-expanded", "false"); }); });
   })();
-  setTimeout(function(){var b=document.querySelector('.mobile-call-btn');if(b){b.style.opacity='1';b.style.pointerEvents='auto';}},800);
 </script>
 </body>
 </html>
